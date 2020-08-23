@@ -1,18 +1,27 @@
 // Defining Functions
 
-function usingOne (customNumber) {
-  let robogerString = customNumber.toString
+function robogerInput (customNumberString) {
+  console.log("customNumberString");
+  const robogerArray = numberUpdate(customNumberString);
 }
 
+function numberUpdate(resultingNumber)
+  let customNumberArray = [];
+  for (let num = 0; num <= parseInt(resultingNumber); num++) {
+     customNumberArray.push(String(num));
+  }
+
+//function numberUpdate()
 // User Input to Output
-function robogerConvert
+//function robogerConvert
+
 // The User Experience
 
 $(document).ready(function() {
   $("#robogerNumberInput").submit(function(event) {
     event.preventDefault();
     console.log(robogerNumberInput);
-    let customNumber = parseInt($("#customNumber").val());
+    let customNumber = parseInt($("robogerAnswer").val());
 
     
   });
