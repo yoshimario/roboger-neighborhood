@@ -1,19 +1,4 @@
-// Defining Functions
-
-function robogerInput (customNumberString) {
-  console.log("customNumberString");
-  const robogerArray = numberUpdate(customNumberString);
-}
-
-function numberUpdate(resultingNumber)
-  let customNumberArray = [];
-  for (let num = 0; num <= parseInt(resultingNumber); num++) {
-     customNumberArray.push(String(num));
-  }
-
-//function numberUpdate()
-// User Input to Output
-//function robogerConvert
+// Business Logic
 
 // The User Experience
 
