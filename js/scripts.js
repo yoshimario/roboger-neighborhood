@@ -9,10 +9,30 @@ function numberIsOne (userNumber) {
   return false;
 };
 
+function numberIsThirteen (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "13") {
+      return true;
+    };
+  };
+  return false;
+};
+
 function numberIsTwo (userNumber) {
   let robogerString = userNumber.toString();
   for (number of robogerString) {
     if (number === "2") {
+      return true;
+    };
+  };
+  return false;
+};
+
+function numberIsTwentyOne (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "21") {
       return true;
     };
   };
@@ -29,6 +49,16 @@ function numberIsThree (userNumber) {
   return false;
 };
 
+function numberIsThirtyTwo (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "32") {
+      return true;
+    };
+  };
+  return false;
+};
+
 function numberIsFive (userNumber) {
   let robogerString = userNumber.toString();
   for (number of robogerString) {
@@ -39,49 +69,23 @@ function numberIsFive (userNumber) {
   return false;
 };
 
-function numberIsThirteen (userNumber) {
-  let robogerString = userNumber.toString();
-  for (number of robogerString) {
-    if (number === "5") {
-      return true;
-    };
-  };
-  return false;
-};
-
-function numberIsTwentyOne (userNumber) {
-  let robogerString = userNumber.toString();
-  for (number of robogerString) {
-    if (number === "5") {
-      return true;
-    };
-  };
-  return false;
-};
-
-function numberIsThirtyTwo (userNumber) {
-  let robogerString = userNumber.toString();
-  for (number of robogerString) {
-    if (number === "5") {
-      return true;
-    };
-  };
-  return false;
-};
 // Business Logic
 
 function roboger (userNumber) {
   let robogerResult = [];
-  if (numberIsOne(userNumber)) {
-    return "Beep!";
-  } else if (numberIsTwo(userNumber)) {
-    return "Boop!";
+  if (numberIsThirtyTwo(userNumber)){
+    return "Won't you be my neighbor!";
   } else if (numberIsThree(userNumber)) {
     return "Won't you be my neighbor!";
-  } else if (numberIsFive(userNumber)) {
-    return "(numberIS)";
-  }
-    else {
+  } else if (numberIsTwentyOne(userNumber)) {
+    return "Boop!";
+  } else if (numberIsTwo(userNumber)) {
+    return "Boop!";
+  } else if (numberIsThirteen(userNumber)) {
+    return "Won't you be my neighbor!";
+  } else if (numberIsOne(userNumber)) {
+    return "Beep!";
+  } else {
     for (u = 0; u<=userNumber; u++) {
       robogerResult.push(u);
     };
