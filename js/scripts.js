@@ -29,6 +29,45 @@ function numberIsThree (userNumber) {
   return false;
 };
 
+function numberIsFive (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "5") {
+      return true;
+    };
+  };
+  return false;
+};
+
+function numberIsThirteen (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "5") {
+      return true;
+    };
+  };
+  return false;
+};
+
+function numberIsTwentyOne (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "5") {
+      return true;
+    };
+  };
+  return false;
+};
+
+function numberIsThirtyTwo (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "5") {
+      return true;
+    };
+  };
+  return false;
+};
 // Business Logic
 
 function roboger (userNumber) {
@@ -39,7 +78,10 @@ function roboger (userNumber) {
     return "Boop!";
   } else if (numberIsThree(userNumber)) {
     return "Won't you be my neighbor!";
-  } else {
+  } else if (numberIsFive(userNumber)) {
+    return "(numberIS)";
+  }
+    else {
     for (u = 0; u<=userNumber; u++) {
       robogerResult.push(u);
     };
