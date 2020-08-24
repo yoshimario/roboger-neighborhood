@@ -53,7 +53,9 @@ function roboger (userNumber) {
 $(document).ready(function() {
   $("#robogerNumberInput").submit(function(event) {
     event.preventDefault();
+    
     const customNumber = parseInt($("#userNumber").val());
+    $("#robogerOutput").show();
     $("#robogerResult").append(roboger(customNumber) + "  ");
     
   });

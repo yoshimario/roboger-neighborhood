@@ -16,3 +16,6 @@ video {
 #robogerResult {
   color: white;
 }
+#robogerOutput{
+  display: none;
+}
