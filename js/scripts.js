@@ -9,30 +9,10 @@ function numberIsOne (userNumber) {
   return false;
 };
 
-function numberIsThirteen (userNumber) {
-  let robogerString = userNumber.toString();
-  for (number of robogerString) {
-    if (number === "13") {
-      return true;
-    };
-  };
-  return false;
-};
-
 function numberIsTwo (userNumber) {
   let robogerString = userNumber.toString();
   for (number of robogerString) {
     if (number === "2") {
-      return true;
-    };
-  };
-  return false;
-};
-
-function numberIsTwentyOne (userNumber) {
-  let robogerString = userNumber.toString();
-  for (number of robogerString) {
-    if (number === "21") {
       return true;
     };
   };
@@ -49,20 +29,43 @@ function numberIsThree (userNumber) {
   return false;
 };
 
-function numberIsThirtyTwo (userNumber) {
+function numberIsFive (userNumber) {
   let robogerString = userNumber.toString();
   for (number of robogerString) {
-    if (number === "32") {
+    if (number === "5") {
       return true;
     };
   };
   return false;
 };
 
-function numberIsFive (userNumber) {
+function numberIsThirteen (userNumber) {
   let robogerString = userNumber.toString();
   for (number of robogerString) {
-    if (number === "5") {
+    if (number === "13") {
+      return true;
+    };
+  };
+  return false;
+};
+
+
+function numberIsTwentyOne (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "21") {
+      return true;
+    };
+  };
+  return false;
+};
+
+
+
+function numberIsThirtyTwo (userNumber) {
+  let robogerString = userNumber.toString();
+  for (number of robogerString) {
+    if (number === "32") {
       return true;
     };
   };
@@ -85,6 +88,8 @@ function roboger (userNumber) {
     return "Won't you be my neighbor!";
   } else if (numberIsOne(userNumber)) {
     return "Beep!";
+  } else if (numberIsFive(userNumber)) {
+    return ('0, ' + '"Beep!"' + ' , ' + '"Boop!"' + ' , ' + "Won't you be my neighbor?" + ', 4, 5');
   } else {
     for (u = 0; u<=userNumber; u++) {
       robogerResult.push(u);
@@ -99,10 +104,8 @@ function roboger (userNumber) {
 $(document).ready(function() {
   $("#robogerNumberInput").submit(function(event) {
     event.preventDefault();
-    
     const customNumber = parseInt($("#userNumber").val());
     $("#robogerOutput").show();
     $("#robogerResult").append(roboger(customNumber) + "  ");
-    
   });
 });

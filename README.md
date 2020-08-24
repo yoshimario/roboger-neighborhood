@@ -34,8 +34,7 @@ _This project will ask the user for a custome number. Then when user submits for
 
 ## Known Bugs
 
-_No known bugs at this time._
-
+_Can not clear prior text in the box at this time when user clicks submit!_
 
 ## Technologies Used
 
