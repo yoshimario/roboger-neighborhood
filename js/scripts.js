@@ -34,16 +34,17 @@ function numberIsThree (userNumber) {
 function roboger (userNumber) {
   let robogerResult = [];
   if (numberIsOne(userNumber)) {
-    return "Beep!"
+    return "Beep!";
   } else if (numberIsTwo(userNumber)) {
-    return "Boop!"
+    return "Boop!";
   } else if (numberIsThree(userNumber)) {
-    return "Won't you be my neighbor!"
+    return "Won't you be my neighbor!";
   } else {
-    for (var u = 0; u<=userNumber; u++;){
-      robogerResult.push(u)
+    for (u = 0; u<=userNumber; u++) {
+      robogerResult.push(u);
     };
-    robogerResultString = robogerResult;
+    robogerResultString = robogerResult.join(", ");
+    return robogerResultString;
   };
 };
 
@@ -52,9 +53,8 @@ function roboger (userNumber) {
 $(document).ready(function() {
   $("#robogerNumberInput").submit(function(event) {
     event.preventDefault();
-    console.log(robogerNumberInput);
-    let customNumber = parseInt($("robogerAnswer").val());
-
+    const customNumber = parseInt($("#userNumber").val());
+    $("#robogerResult").append(roboger(customNumber) + "  ");
     
   });
 });

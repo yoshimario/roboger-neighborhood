@@ -13,6 +13,6 @@ video {
   z-index: -1000;
 }
 
-#robogerOutput {
-  display: none;
+#robogerResult {
+  color: white;
 }
