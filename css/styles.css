@@ -11,6 +11,7 @@ video {
   top: 0;
   left: 0;
   z-index: -1000;
+  filter: hue-rotate(130deg);
 }
 
 #robogerResult {
@@ -18,4 +19,9 @@ video {
 }
 #robogerOutput{
   display: none;
+}
+.container {
+  align-content: center;
+  text-align: center;
+  color: whitesmoke;
 }
