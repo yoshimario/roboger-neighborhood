@@ -7,13 +7,10 @@
       let robogerString = u.toString();
       if (robogerString.includes("3")) {
         robogerResult.push("Won't you be my neighbor?");
-        console.log(robogerResult);
       } else if (robogerString.includes("2")) {
         robogerResult.push("Boop");
-        console.log(robogerResult);
       } else if (robogerString.includes("1")) {
         robogerResult.push("Beep!");
-        console.log(robogerResult);
       } else {
         robogerResult.push(u);
       }
@@ -29,6 +26,6 @@ $(document).ready(function() {
     event.preventDefault();
     const customNumber = parseInt($("#userNumber").val());
     $("#robogerOutput").show();
-    $("#robogerResult").text(roboger(customNumber) + "  ." + " Thank you for playing!");
+    $("#robogerResult").text(roboger(customNumber) + "." + " Thank you for playing!");
   });
 });

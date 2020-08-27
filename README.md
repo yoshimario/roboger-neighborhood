@@ -20,21 +20,37 @@ _This project will ask the user for a custome number. Then when user submits for
 
 ### Specifications
 
-* Specification 1: Any numbers that contain a 1 shall have all digits are replaced with "Beep".
+* Spec 1: The program returns a range of numbers from 0 to the users inputted number
+  * Input: "5"
+  * Output: "0, 1, 2, 3, 4, 5"
 
-* Specification 2: Any numbers that contain 2 shall have all digits are replaced with "Boop".
+* Spec 2: Any numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+  * Input: "5"
+  * Output: "0, Beep, 2, 3, 4, 5"
 
-* Specification 3: Any number that contains a 3 shall have all digits are replaced with "Won't you be my neighbor?
+* Spec 3: Any numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+  * Input: "5"
+  * Output: "0, 1, Boop, 3, 4, 5"
 
-* Specification 4: The number 13 should be replaced with "Won't you be my neighbor?".
+* Spec 4: Any numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+  * Input: "5"
+  * Output: "0, 1, 2, Won't you be my neighbor?, 4,5"
 
-* Specification 5: The number 21 should be replaced with "Boop".
+* Spec 5: The number 13 should be replaced with "Won't you be my neighbor?"
+  * Input: "13"
+  * Output: "0, Beep!, Boop, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop, Won't you be my neighbor?"
 
-* Specification 6: The number 32 shoud be replaced with "Won't you be my neighbor?"
+* Spec 6: The number 21 should be replaced with "Boop".
+  * Input: "21"
+  * Output: "0, Beep!, Boop, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop, Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop, Boop."
+
+* Spec 7: The number 32 should be replaced with "Won't you be my neighbor?"
+  * Input: "32"
+  * Output: "0, Beep!, Boop, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop, Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop, Boop, Boop, Won't you be my neighbor?, Boop, Boop, Boop, Boop, Boop, Boop, Won't you be my neighbor?, Won't you be my neighbor?, Won't you be my neighbor?. Thank you for playing!"
 
 ## Known Bugs
 
-_Can not clear prior text in the box at this time when user clicks submit!_
+_No known bugs at this time!_
 
 ## Technologies Used
 
