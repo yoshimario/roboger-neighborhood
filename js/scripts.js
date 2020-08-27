@@ -11,6 +11,9 @@
       } else if (robogerString.includes("2")) {
         robogerResult.push("Boop");
         console.log(robogerResult);
+      } else if (robogerString.includes("1")) {
+        robogerResult.push("Beep!");
+        console.log(robogerResult);
       }
     };
     robogerResultString = robogerResult.join(", ");
