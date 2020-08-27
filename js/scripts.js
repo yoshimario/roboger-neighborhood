@@ -14,6 +14,8 @@
       } else if (robogerString.includes("1")) {
         robogerResult.push("Beep!");
         console.log(robogerResult);
+      } else {
+        robogerResult.push(u);
       }
     };
     robogerResultString = robogerResult.join(", ");
@@ -27,6 +29,6 @@ $(document).ready(function() {
     event.preventDefault();
     const customNumber = parseInt($("#userNumber").val());
     $("#robogerOutput").show();
-    $("#robogerResult").text(roboger(customNumber) + "  ");
+    $("#robogerResult").text(roboger(customNumber) + "  ." + " Thank you for playing!");
   });
 });
