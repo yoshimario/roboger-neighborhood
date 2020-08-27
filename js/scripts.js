@@ -3,10 +3,13 @@
   function roboger(userNumber) {
     let robogerResult = [];
 
-    for(i=0; i <= userNumber; i +=1) {
-      let numberString = i.toString();
-      if (numberString.includes("3")) {
+    for(u=0; u <= userNumber; u +=1) {
+      let robogerString = u.toString();
+      if (robogerString.includes("3")) {
         robogerResult.push("Won't you be my neighbor?");
+        console.log(robogerResult);
+      } else if (robogerString.includes("2")) {
+        robogerResult.push("Boop");
         console.log(robogerResult);
       }
     };
