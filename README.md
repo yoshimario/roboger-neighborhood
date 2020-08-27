@@ -18,6 +18,8 @@ _This project will ask the user for a custome number. Then when user submits for
 * _Open index.html_
 * _View website in browser_
 
+Or alternatively view it at https://yoshimario.github.io/roboger-neighborhood/.
+
 ### Specifications
 
 * Spec 1: The program returns a range of numbers from 0 to the users inputted number
